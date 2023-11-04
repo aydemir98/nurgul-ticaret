@@ -1,0 +1,83 @@
+.container {
+  display: flex; /* divleri yan yana hizaladık */
+}
+.box {
+  width: 50%; /* divleri eşit genişlikte yapmak için yarı yarıya bölfük */
+  margin-left: 5px; /* soldan 5px boşluk bıraktık */
+  margin-right: 5px; /* sağdan 5px boşluk bıraktık */
+  height: 600px; /* yükseklik verdik */
+  text-align: center; /* içerikleri ortaladık */
+  border-radius: 15px; /* köşeleri yuvarladık */
+  background-color: #96d5ffbb; /* arkaplan rengi verdik */
+}
+.box:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* divlerin üzerine gelince gölge veren kod */
+}
+.left .right {
+  background-color: #300808; /* sağ - sol divlerin varsayılan rengi */
+}
+.left:hover {
+  background-color: #54abfc; /* sol divin üzerine gelince oluşacak renk */
+}
+.right:hover {
+  background-color: #54abfc; /* sağ divin üzerine gelince oluşacak renk */
+}
+a{
+    text-decoration: none; /* a etiketi için alt çizgiyi kaldırdık */
+}
+img {
+  padding-top: 5px; /* üstten böşluk bıraktık */
+  width: 500px; /* genişlik değeri verdik */
+  height: 450px; /* yükseklik değeri verdik */
+}
+
+/* responsive özellikler */
+@media (max-width: 768px) {
+  .box {
+    display: flex;
+    flex-direction: column; /* İçerikleri dikeyde hizala */
+    justify-content: center; /* Dikeyde ortalama yap */
+    align-items: center; /* Yatayda ortalama yap */
+    height: 100vh; /* Sayfa yüksekliği kadar genişlik */
+    margin: 1px;
+  }
+  img {
+    /* resmi küçülttük*/
+    width: 250px;
+    height: 230px;
+  }
+  h1 {
+    font-size: medium; /*yazının fontu orta büyüklükte olsun*/
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .box {
+    display: flex;
+    flex-direction: column; /* İçerikleri dikeyde hizala */
+    justify-content: center; /* Dikeyde ortalama yap */
+    align-items: center; /* Yatayda ortalama yap */
+    height: 100vh; /* Sayfa yüksekliği kadar genişlik */
+    margin: 3px; /* boşluk bırak*/
+  }
+  img {
+    /* resmi küçülttük*/
+    width: 350px;
+    height: 330px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .box {
+    display: flex;
+    flex-direction: column; /* İçerikleri dikeyde hizala */
+    justify-content: center; /* Dikeyde ortalama yap */
+    align-items: center; /* Yatayda ortalama yap */
+    height: 100vh; /* Sayfa yüksekliği kadar genişlik */
+    margin: 2px; /* boşluk bırak*/
+  }
+  img {
+    width: 500px;
+    height: 450px;
+  }
+}
