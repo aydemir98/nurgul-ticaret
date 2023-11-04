@@ -11,6 +11,7 @@
   align-items: center; /* Yatayda ortalama yap */
   height: 100vh; /* Sayfa yüksekliği kadar genişlik */
   margin-left: 2px; /* soldan boşluk bıraktık*/
+  background-color: #bbdfff; /* box'lara arkaplan rengi verdik */
 }
 .box:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* divlerin üzerine gelince gölge veren kod */
