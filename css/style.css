@@ -17,11 +17,11 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* divlerin üzerine gelince gölge veren kod */
 }
 
-.left{
+.left {
   margin-left: 5px; /* soldan 5px boşluk bıraktık */
 }
 
-.right{
+.right {
   margin-right: 5px; /* sağdan 5px boşluk bıraktık */
 }
 
@@ -37,8 +37,8 @@
   background-color: #54abfc; /* sağ divin üzerine gelince oluşacak renk */
 }
 
-a{
-    text-decoration: none; /* a etiketi için alt çizgiyi kaldırdık */
+a {
+  text-decoration: none; /* a etiketi için alt çizgiyi kaldırdık */
 }
 
 img {
@@ -82,4 +82,3 @@ img {
     height: 330px;
   }
 }
-
